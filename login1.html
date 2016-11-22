@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/login1.css" />
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/login1.js"></script>
+	</head>
+
+	<body>
+		<section class="login-wrap">
+			<header class="header">
+				<h1>登录</h1>
+				<span class="info">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享代码、解决求助赢取金币。</span>
+			</header>
+			<div class="content">
+				<div class="form-item">
+					<div class="item-tip">手机</div>
+					<input class="form-input" name="phone" type="text" tabindex="1" reg='^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$' />
+					<span class="item-info">手机输入不正确</span>
+				</div>
+				<div class="form-item">
+					<div class="item-tip">邮箱</div>
+					<input class="form-input" name="email" tabindex="2" reg='^([a-zA-Z0-9_-])+@([A-z0-9_-])+(.[a-zA-Z0-9_-])+'>
+					<span class="item-info">邮箱输入不正确</span>
+				</div>
+				<div class="form-item">
+					<div class="item-tip">密码</div>
+					<input class="form-input" name="password" type="password" tabindex="3" reg='^\d{6,8}$'>
+					<span class="item-info">密码输入不正确</span>
+				</div>
+				<div class="form-item">
+					<input id="rememberme" class="ckeckBox" type="checkbox" name="rememberme">
+					<label for="rememberme">两周内免登录</label>
+					<a class="a_underline" href="#">忘记密码？</a>
+				</div>
+				<button id='login-btn' class="btn btn-login" tabindex="4">登  录</button>
+			</div>
+		</section>
+	</body>
+
+</html>

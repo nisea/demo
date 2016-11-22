@@ -1,0 +1,228 @@
+@charset "utf-8";
+.arrow {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block
+}
+.arrow-up-menu {
+	border-bottom: 5px solid #f63;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	display: none;
+	top: 35px;
+	left: 40px;
+}
+
+/*页面右边*/
+
+dl.right{
+	width: 308px;
+	float: right;
+	background-color: white;
+	border-top: 3px solid black;
+}
+dl.right h3{
+	padding: 11px 15px;
+	font-size: 1.6rem;
+}
+dl.right h3 a{
+	font-size: 1.2rem;
+	float: right;
+	margin-top: 3px;
+}
+
+dl.right .article-link{
+	background: rgba(0, 0, 0, 0) url("../images/a.png") no-repeat scroll -178px -66px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 9px 9px;
+	overflow: hidden;
+	padding-left: 20px;
+	font-size: 1.2rem;
+}
+dl.right .article-link a{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 225px;
+}
+
+dl.right .article-link time {
+	color: #ccc;
+	float: right;
+}
+
+
+/*页面主体*/
+main{
+	margin: 20px auto;
+	width: 1100px;
+}
+/*quick-section*/
+#quick-section{
+}
+#quick-section > .left{
+	width: 782px;
+	float: left;
+	background-color: green;
+}
+#quick-section .quick-nav{
+	width: 180px;
+	float: left;
+}
+#quick-section .quick-nav header{
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #eee;
+	height: 34px;
+	line-height: 34px;
+}
+#quick-section .quick-nav h3{
+	color: #666;
+	font-size: 1.6rem;
+	margin-left: 17px;
+}
+
+#quick-section .quick-link{
+	background-color: white;
+	padding: 7px 15px;
+	font-size: 1.4rem;
+	color: #484848;
+	cursor: pointer;
+}
+.icon-merchant {
+	background-image: url("../images/classification_cion.png");
+	display: inline-block;
+	width: 15px;
+	height: 22px;
+	vertical-align: middle;
+	margin-right: 8px;
+	position: relative
+}
+.icon-merchant-fire{
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 0
+}
+.icon-merchant-mobile {
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 -27px
+}
+.icon-merchant-js {
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 -53px
+}
+.icon-merchant-png {
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 -75px
+}
+.icon-merchant-typeface {
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 -95px
+}
+.icon-merchant-code {
+	bottom: 4px;
+	background: url("../images/classification_cion2.png") no-repeat scroll 0 -119px
+}
+
+#quick-section .quick-nav .merchant-arrow-right{
+	background-image: url("../images/classification_cion.png");
+	background-position: 0 -309px;
+	height: 10px;
+	width: 7px;
+	display: inline-block;
+	float: right;
+	margin: 6px 5px 0;
+}
+#quick-section .quick-link span {
+	transition: transform .2s linear;
+	display: inline-block
+}
+#quick-section .quick-link:hover span{
+	transform: translateX(8px);
+}
+
+/*model-section page-section*/
+.main-section{
+	margin-top: 20px;
+}
+
+.main-section .left{
+	width: 782px;
+	background: white;
+	float: left;
+}
+
+.main-section .header{
+	border-bottom: 2px solid #bbb;
+	height: 40px;
+	line-height: 40px;
+}
+.main-section .header h3{
+	font-size: 1.8rem;
+	float: left;
+	margin-left: 17px;
+	width: 115px;
+	color: #333;
+}
+.main-section .header ul{
+	float: left;
+	width: 606px;
+}
+.main-section .header ul li{
+	cursor: pointer;
+	float: left;
+	font-size: 1.3rem;
+	height: 40px;
+	line-height: 42px;
+	position: relative;
+	text-align: center;
+	width: 86px;
+}
+.main-section .header ul li.current{
+	border-bottom: 2px solid #f63;
+	color: #f63;
+}
+.main-section .header ul li.current .arrow{
+	display: block;
+}
+
+.main-section .content{
+	padding: 8px;
+	text-align: center;
+	font-size: 1.2rem;
+	display: none;
+	opacity:0;
+}
+.main-section .content.current{
+	display: block;
+	opacity:1;
+	transition: opacity 1s ease-in-out 0s;
+}
+.main-section .content:empty{
+	height: 395px;
+}
+.main-section .content li {
+	margin: 11px 10px;
+	width: 235px;
+	cursor: pointer;
+	float: left;
+}
+.main-section .content .words-link li{
+	background: rgba(0, 0, 0, 0) url("../images/a.png") no-repeat scroll -182px -94px;
+	height: 24px;
+	line-height: 24px;
+	margin: 4px 10px;
+	overflow: hidden;
+	text-align: left;
+}
+.main-section .content .words-link li a{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left: 20px;
+}
+
+/*页面主体*/

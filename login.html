@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/login.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header id="page-header">
+			<div id="header-top">
+				<div class="menu">
+					<ul class="left">
+						<li><i></i><span><a href="#">素材火首页</a></span></li>
+						<li>test</li>
+						<li><a href="#">退出</a></li>
+					</ul>
+					<ul class="right">
+						<li>充值</li>
+						<li>个人中心</li>
+						<li id="help-li"><span>帮助中心</span><b></b>
+							<ul>
+								<li><a href="#">扒模板</a></li>
+								<li><a href="#">积分获取</a></li>
+								<li><a href="#">联系我们</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">招纳贤士</a></li>
+							</ul>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="header-search" class="clearfix">
+				<div class="logo">
+					<a href="#">
+						<img alt="logo" src="images/logo.png">
+					</a>
+				</div>
+				<div class="search">
+					<div class="content">
+						<span class="icon-search"></span>
+						<input id="search-input" placeholder="请输入搜索内容">
+						<button id="search-button">搜索</button>
+					</div>
+					<div class="hot-tag">
+						<span>热门搜索：</span>
+						<a href="#" class="red">手机</a>
+						<a href="#">导航菜单</a>
+						<a href="#">bootstrap</a>
+						<a href="#">后台</a>
+						<a href="#" class="red">上传</a>
+						<a href="#">购物车</a>
+						<a href="#" class="red">日期时间</a>
+						<a href="#">弹出层</a>
+					</div>
+				</div>
+				<div class="ads">
+					<a class="bbs-banner" href="#">
+						<img alt="扒模板" src="images/other/banner.jpg">
+					</a>
+				</div>
+			</div>
+			<nav id="header-nav">
+				<div class="menu">
+					<ul>
+						<li><a href='#' class="current">首 页</a></li>
+						<li><a href='#'>jQuery特效</a><span class="hot"></span></li>
+						<li><a href='#'>PHP</a></li>
+						<li><a href='#'>网站模板</a></li>
+						<li><a href='#'>话题社区</a></li>
+						<li><a href='#'>精选网址</a></li>
+						<li><a href='#'>工具箱</a></li>
+						<li><a href='#'>扒模板</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--头部-->
+		<section class="login-wrap">
+			<header class="header">
+
+				<h1>登录</h1>
+				<span class="info">与网友进行讨论及互动；收藏您喜欢的文章和内容；积累积分下载原创模板、精品源码、(兑换礼品正在开发中...)；分享代码、解决求助赢取金币。</span>
+			</header>
+			<div class="content">
+				<div class="form-item">
+					<div class="item-tip">手机</div>
+					<input class="form-input" name="phone" tabindex="1" reg='^1\d{10}$'>
+					<span class="error-info">手机输入不正确</span>
+				</div>
+				<div class="form-item">
+					<div class="item-tip">邮箱</div>
+					<input class="form-input" name="email" tabindex="2" reg='^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$'>
+					<span class="error-info">邮箱输入不正确</span>
+				</div>
+				<div class="form-item">
+					<div class="item-tip">密码</div>
+					<input class="form-input" name="password" type="password" tabindex="3" reg='^\d{6,8}$'>
+					<span class="error-info">密码输入不正确</span>
+				</div>
+				<div class="form-item">
+					<input id="rememberme" class="ckeckBox" type="checkbox" name="rememberme">
+					<label for="rememberme">两周内免登录</label>
+					<a class="a_underline" href="http://www.sucaihuo.com/forget.html">忘记密码？</a>
+				</div>
+				<button id='login-btn' class="btn btn-login" tabindex="4">登  录</button>
+			</div>
+		</section>
+		<!--页面尾部-->
+		<footer class="page-footer">
+			<section class="footer-main clearfix">
+				<div class="cell">
+					<header><span class="icon guide-icon"></span>
+						<h3>网站模板</h3></header>
+					<ul>
+						<li>
+							<a href="#">行业模板</a>
+							<a href="#">专题模板</a>
+						</li>
+						<li>
+							<a href="#">商城模板</a>
+							<a href="#">后台模板</a>
+						</li>
+						<li>
+							<a href="#">企业模板</a>
+							<a href="#">其他模板</a>
+						</li>
+						<li>
+							<a href="#">求职招聘</a>
+							<a href="#">订餐外送</a>
+						</li>
+						<li>
+							<a href="#">个人博客</a>
+							<a href="#">中文模板</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cell">
+					<header><span class="icon stores-icon"></span>
+						<h3>jquery特效</h3></header>
+					<ul>
+						<li>
+							<a href="#">图片代码</a>
+							<a href="#">悬浮层/弹出层</a>
+						</li>
+						<li>
+							<a href="#">导航菜单</a>
+							<a href="#">其它特效</a>
+						</li>
+						<li>
+							<a href="#">选项卡/滑动门</a>
+							<a href="#">PHP+Ajax</a>
+						</li>
+						<li>
+							<a href="#">表单代码</a>
+							<a href="#">jQuery插件</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cell">
+					<header><span class="icon rebate-icon"></span>
+						<h3>推荐jQuery</h3></header>
+					<ul>
+						<li>
+							<a href="#">datepicker</a>
+							<a href="#">flowplayer</a>
+						</li>
+						<li>
+							<a href="#">jQuery购物车</a>
+							<a href="#">jquery表单验证</a>
+						</li>
+						<li>
+							<a href="#">lightbox</a>
+							<a href="#">jquery滚动条</a>
+						</li>
+						<li>
+							<a href="#">fancybox</a>
+							<a href="#">WebUploader</a>
+						</li>
+						<li>
+							<a href="#">fullcalendar</a>
+							<a href="#">上传</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cell">
+					<header><span class="icon follow-icon"></span>
+						<h3>联系我们</h3></header>
+					<ul>
+						<li>
+							<a class="qq-chat" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=416148489&site=qq&menu=yes">
+								<img src="images/qq-chat.png" alt="QQ在线客服">
+							</a>
+						</li>
+						<li>
+							qq群：35291327
+						</li>
+						<li>
+							邮箱：416148489@qq.com
+						</li>
+						<li>
+							手机：18502560773
+						</li>
+					</ul>
+				</div>
+				<div class="friendly">
+					<a href="#">扒模板</a>
+					<a href="#">联系我们</a>
+					<a href="#">关于我们</a>
+					<a href="#">招纳贤士</a>
+					<a href="#">网站地图</a>
+					<span class="address">Copyright©2010-2015 All Rights Reserved. 苏ICP备15009298</span>
+				</div>
+			</section>
+
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,68 @@
+@charset "utf-8";
+.page-footer {
+	background: #fff none repeat scroll 0 0;
+    margin: 12px 0 0;
+}
+
+.page-footer .footer-main {
+    margin: 0 auto;
+    width: 1100px;
+}
+.footer-main h3{
+    font-size: 1.6rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    padding-left:10px;
+    vertical-align: 1rem;
+    display: inline-block;
+}
+.footer-main .icon{
+	height: 36px;
+    left: 2px;
+    top: 2px;
+    width: 36px;
+    display: inline-block;
+}
+.footer-main .guide-icon{
+	background: rgba(0, 0, 0, 0) url("../images/icons20141021.png") no-repeat scroll 0 -97px;
+
+}
+.footer-main .stores-icon{
+	 background: rgba(0, 0, 0, 0) url("../images/s.png") no-repeat scroll 0 -45px;
+}
+
+.footer-main  .rebate-icon {
+    background: rgba(0, 0, 0, 0) url("../images/s.png") no-repeat scroll 0 -150px;
+}
+
+.footer-main .follow-icon {
+    background: rgba(0, 0, 0, 0) url("../images/s2.png") no-repeat scroll 0 -944px;
+}
+.footer-main .cell{
+	width: 250px;
+	height: 190px;
+	float: left;
+	margin: 10px;
+	border-right: 1px solid #eaeaea;
+	font-size: 12px;
+	
+}
+
+.footer-main li {
+    color: gray;
+}
+.footer-main li a{
+	display: inline-block;
+	width: 100px;
+}
+.page-footer .friendly{
+	border-top: 1px solid #dfdfdf;
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+   	font-size: 1.2rem;
+}
+.page-footer .friendly a{
+	 margin: 0 8px;
+}
